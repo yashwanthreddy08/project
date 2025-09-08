@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Developer Portfolio Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+    <div class="container">
+        <header>
+            <h1>Developer Portfolio Generator</h1>
+            <div class="theme-toggle">
+                <button onclick="setTheme('light')">☀ Light</button>
+                <button onclick="setTheme('dark')">🌙 Dark</button>
+            </div>
+        </header>
+
+        <section class="editor-section">
+            <textarea id="markdown-input" placeholder="Enter your Markdown content here...">
+
+
+## About Me
+I'm a passionate web developer with experience in building modern web applications.
+
+## Projects
+- Portfolio Website
+- Blog Platform
+- Open Source Contributions
+
+## Contact
+Email: yashwanthreddy0808146@gmail.com  
+LinkedIn: www.linkedin.com/in/oduru-yashwanth-reddy
+            </textarea>
+        </section>
+
+        <section class="preview-section">
+            <h2>Preview</h2>
+            <div id="preview" class="preview"></div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

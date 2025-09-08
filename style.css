@@ -1,0 +1,133 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.theme-toggle button {
+    background: none;
+    border: 2px solid currentColor;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle button:hover {
+    background-color: currentColor;
+    color: #fff;
+}
+
+.editor-section, .preview-section {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 4px 12px rgba(0,123,255,0.2);
+    outline: none;
+}
+
+.preview {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Light Theme */
+body.light {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+body.light textarea {
+    background-color: #fff;
+    color: #000;
+}
+body.light .preview {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #121212;
+    color: #eee;
+}
+
+body.dark textarea {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+body.dark .preview {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Markdown Styling */
+.preview h1 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+.preview h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.preview a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.preview a:hover {
+    text-decoration: underline;
+}
+
+.preview ul {
+    padding-left: 20px;
+}
+
+.preview p {
+    margin-bottom: 10px;
+}
